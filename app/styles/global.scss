@@ -1,0 +1,240 @@
+@import "bootstrap/scss/bootstrap-grid";
+
+// ===== Variables ===== //
+
+$white: #ffffff;
+$black: #000000;
+
+$gray1: #e2e4ed;
+$gray2: #bdc1cf;
+$gray3: #80869d;
+$gray4: #6a6f83;
+$gray5: #616161;
+
+$primarydark1: #464c5f;
+$primarydark2: #3b4254;
+$primarydark3: #303544;
+$primarydark4: #222631;
+$primarydark5: #1b1f28;
+
+$primaryLight1: #b5cab6;
+$primarygreen2: #849b85;
+$primarygreen3: #566d57;
+$primaryorange1: #f0d9b0;
+$primaryorange2: #dcb467;
+$primaryorange3: #b99247;
+
+$success: #5aa983;
+$warning: #c2aa55;
+$alert: #891515;
+
+$border-color: #ddd;
+$border-radius: 8px;
+$card-hover-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+body,
+.appContainer {
+  margin: 0;
+  padding: 0;
+  background-color: $primarydark5;
+  color: $white;
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+// ===== Buttons ===== //
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+
+  &.button-primary.button-filled {
+    background-color: #566d57;
+    color: white;
+
+    &:hover {
+      background-color: #849b85;
+    }
+  }
+
+  &.button-secondary.button-filled {
+    background-color: #3b4254;
+    color: #bdc1cf;
+
+    &:hover {
+      background-color: #464c5f;
+    }
+  }
+
+  &.button-link {
+    background: none;
+    color: #849b85;
+    text-decoration: underline;
+    padding: 0;
+
+    &:hover {
+      color: #566d57;
+    }
+  }
+
+  &.button-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+// ===== Nav ===== //
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  background-color: $primarydark3;
+  padding: 1rem 2rem;
+  color: $white;
+
+  .navLogo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $white;
+    text-decoration: none;
+    margin-right: 2rem;
+
+    &:hover {
+      color: $gray2;
+    }
+  }
+
+  .navLinks {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+
+    .navLink {
+      color: $gray2;
+      text-decoration: none;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+// ===== Inputs ===== //
+
+.filterInput {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid $gray2;
+  border-radius: 8px;
+  background-color: $primarydark4;
+  color: $white;
+  font-size: 1rem;
+
+  &::placeholder {
+    color: $gray3;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $primarygreen2;
+    box-shadow: 0 0 0 2px rgba($primarygreen2, 0.3);
+  }
+}
+
+// ===== Feed ===== //
+
+.feed {
+  padding: 2rem 0;
+
+  .feedTitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: $gray1;
+  }
+
+  .feedList {
+    list-style: none;
+    padding: 0;
+    margin: 0.75rem 0 0 0;
+  }
+
+  .feedItem {
+    background-color: $primarydark3;
+    border-radius: $border-radius;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: $card-hover-shadow;
+
+    .feedItemHeader {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+
+      .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .postTitle {
+        font-size: 1.25rem;
+        color: $white;
+        margin: 0;
+      }
+
+      .postAuthor {
+        color: $gray2;
+        font-size: 0.875rem;
+      }
+    }
+
+    .postBody {
+      color: $gray1;
+      margin-bottom: 1rem;
+    }
+
+    .fileList {
+      list-style: none;
+      padding: 0;
+
+      li a {
+        color: $primaryorange2;
+        text-decoration: underline;
+
+        &:hover {
+          color: $primaryorange3;
+        }
+      }
+    }
+  }
+}
+
+.tag {
+  display: inline-block;
+  background: #849b85;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.25rem 0.25rem 0;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}

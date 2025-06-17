@@ -1,0 +1,47 @@
+{
+    "users": [
+      {
+        "id": 101,
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "profile_image": "https://i.pravatar.cc/100?img=1"
+      },
+      {
+        "id": 102,
+        "first_name": "John",
+        "last_name": "Smith",
+        "profile_image": "https://i.pravatar.cc/100?img=2"
+      }
+    ],
+    "feedPosts": [
+      {
+        "id": 1,
+        "title": "Welcome to the Feed",
+        "body": "<p>This is a sample post.</p>",
+        "created": "2024-06-17T12:00:00Z",
+        "user_id": 101,
+        "categories": ["News", "Update"],
+        "files": [
+          {
+            "id": 1,
+            "file": "https://via.placeholder.com/300x200.png?text=Sample+PDF+Preview",
+            "name": "Sample File"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Another Post",
+        "body": "<p>This is another sample post.</p>",
+        "created": "2024-06-18T15:30:00Z",
+        "user_id": 102,
+        "files": [
+          {
+            "id": 2,
+            "file": "https://via.placeholder.com/400x250.jpg?text=Attached+Image",
+            "name": "Image File"
+          }
+        ]
+      }
+    ]
+  }
