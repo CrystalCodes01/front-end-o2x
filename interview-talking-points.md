@@ -2,7 +2,7 @@
 
 ## Problem 1: Routing Issue
 
-Why is fedd/[reqid]/page.tsx crashing?
+Why is feed/[reqid]/page.tsx crashing?
 
 ## Problem 2: Build a Filter
 
