@@ -2,7 +2,6 @@
 import React from "react";
 
 export default function Home() {
-  // This will break — Next 15 doesn’t support React 19's experimental React.use
   const data = React.use(async () => await Promise.resolve("hi"));
 
   return (
