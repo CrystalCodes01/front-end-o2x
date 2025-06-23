@@ -18,8 +18,10 @@ Fix error on main feed page
 
 ### 1. What experience do you have working with monorepos?
 
-### 2. What do you think of the architecture of this testing application?
+### 2. What are some software architecture practices that you practice and promote for scalability?
 
 ### 3. What is over-engineering and how do you avoid it?
 
-### 4. Lets talk about SSR - caviats, use caes, benefits, downfalls
+### 4. Let’s talk about SSR vs CSR — caveats, use cases, benefits, downfalls
+
+### 5. How do you approach balancing client-side and server-side logic when migrating from SSR-heavy apps to CSR or hybrid setups?
