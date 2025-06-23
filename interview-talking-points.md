@@ -1,16 +1,20 @@
 # Technical Exercise
 
-## Problem 1: Routing Issue
+## Problem 1: Dynamic Routing
 
 Why is feed/[reqid]/page.tsx crashing?
 
-## Problem 2: Build a Filter
+## Problem 2: Console Errors
 
-The page includes a search input. Candidates must implement filtering logic based on post titles or author names using the provided static data.
+When you clone this repository and run the project, you’ll notice some errors and warnings in the console. Can you walk me through what you find and how you would resolve them?
 
 ## Problem 3: Error Handling
 
 Fix error on main feed page
+
+## Problem 4: Build a Filter
+
+The page includes a search input. Candidates must implement filtering logic based on post titles or author names using the provided static data.
 
 ---
 
