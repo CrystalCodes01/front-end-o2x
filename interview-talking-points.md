@@ -25,3 +25,5 @@ Fix error on main feed page
 ### 4. Let’s talk about SSR vs CSR — caveats, use cases, benefits, downfalls
 
 ### 5. How do you approach balancing client-side and server-side logic when migrating from SSR-heavy apps to CSR or hybrid setups?
+
+### 6. Tell me about a time you inherited a complex codebase. How did you assess it, and what changes did you make to improve its maintainability or scalability?
