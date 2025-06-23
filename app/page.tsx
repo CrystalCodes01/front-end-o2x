@@ -1,7 +1,8 @@
 "use client";
+import React from "react";
 
 export default function Home() {
-  const data = use(async () => await Promise.resolve("hi"));
+  const data = React.use(async () => await Promise.resolve("hi"));
 
   return (
     <div className="appContainer">
